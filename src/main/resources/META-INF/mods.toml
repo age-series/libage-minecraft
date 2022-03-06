@@ -1,0 +1,39 @@
+modLoader="kotlinforforge"
+loaderVersion="[3,)"
+license="Code - MIT, Content - CC0 (unless otherwise specified)"
+issueTrackerURL="https://github.com/age-series/libage-minecraft/issues"
+
+[[mods]]
+modId="libage_minecraft"
+version="${file.jarVersion}"
+displayName="Libage Minecraft"
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="https://age-series.org/"
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile=""
+credits="The Age Series Team"
+authors="jrddunbr"
+
+description='''
+Libage Minecraft is a dependency mod for all of the Age-Series mods.
+
+It's MIT licensed, so feel free to use it for your mod too!
+'''
+
+[[dependencies.libage_minecraft]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+[[dependencies.libage_minecraft]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
